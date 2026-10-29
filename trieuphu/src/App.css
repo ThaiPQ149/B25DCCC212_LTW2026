@@ -15,7 +15,7 @@ th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
 .timer.danger { color: red; }
 .question-text { font-size: 20px; }
 .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.answer { padding: 14px; border: 2px solid #1e2a5a; border-radius: 8px; border-radius: 0; background: #fff; color: #111; font-size: 16px; text-align: left; cursor: pointer; }
+.answer { padding: 14px; border: 2px solid #1e2a5a; border-radius: 0; background: #fff; color: #111; font-size: 16px; text-align: left; cursor: pointer; }
 .answer:disabled { cursor: default; }
 .answer.locked { background: orange; color: #fff; }
 .answer.correct { background: #4caf50; color: #fff; }

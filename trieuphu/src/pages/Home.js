@@ -1,7 +1,10 @@
 import { useNavigate } from 'react-router-dom';
+import { formatMoney } from '../data';
 
-const Home = ({ playerName, setPlayerName }) => {
+const Home = ({ playerName, setPlayerName, history }) => {
   const navigate = useNavigate();
+
+  const best = history.reduce((b, h) => (!b || h.prize > b.prize ? h : b), null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,6 +14,7 @@ const Home = ({ playerName, setPlayerName }) => {
   return (
     <div>
       <h1>Ai là triệu phú</h1>
+      {best && <p>Kỷ lục: {formatMoney(best.prize)} – {best.name}</p>}
       <ul>
         <li>Trả lời lần lượt 15 câu hỏi trắc nghiệm, mỗi câu có 30 giây.</li>
         <li>Trả lời đúng thì lên bậc tiền thưởng tiếp theo, câu 15 trị giá 250.000.000 đ.</li>
