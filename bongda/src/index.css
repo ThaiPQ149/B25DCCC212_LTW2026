@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.app { min-height: 100vh; padding: 16px 24px; box-sizing: border-box; }
+.app.light { background: #ffffff; color: #18212c; }
+.app.dark { background: #1f2430; color: #e8eaf0; }
+.header { display: flex; justify-content: space-between; align-items: center; }
+section { margin-bottom: 24px; }
+table { border-collapse: collapse; width: 100%; max-width: 960px; }
+th, td { border: 1px solid rgba(128, 128, 128, 0.45); padding: 6px 8px; text-align: left; }
+tr.draw { background: rgba(255, 193, 7, 0.25); }
+tr.last-place, tr.last-place td { color: #c62828; }
+input[type='number'] { width: 70px; }
+.filters, .field { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+.form { display: grid; gap: 10px; max-width: 420px; }
+.form .field { display: grid; gap: 4px; }
+.error { color: #c62828; font-size: 13px; }
+.bar { display: inline-block; height: 10px; background: #2e7d32; vertical-align: middle; margin-left: 8px; }
+.notice {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  text-align: center; padding: 8px; background: #263238; color: #fff;
+}
+.notice:empty { display: none; }
