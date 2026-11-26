@@ -4,7 +4,7 @@ body {
 }
 .app { min-height: 100vh; padding: 16px 24px; box-sizing: border-box; }
 .app.light { background: #ffffff; color: #18212c; }
-.app.dark { background: #1f2430; color: #e8eaf0; }
+.app.dark { background: #000000; color: #e8eaf0; }
 .header { display: flex; justify-content: space-between; align-items: center; }
 section { margin-bottom: 24px; }
 table { border-collapse: collapse; width: 100%; max-width: 960px; }
@@ -19,6 +19,6 @@ input[type='number'] { width: 70px; }
 .bar { display: inline-block; height: 10px; background: #2e7d32; vertical-align: middle; margin-left: 8px; }
 .notice {
   position: fixed; top: 0; left: 0; right: 0; z-index: 10;
-  text-align: center; padding: 8px; background: #263238; color: #fff;
+  text-align: center; padding: 8px; background: #808080; color: #fff;
 }
 .notice:empty { display: none; }
